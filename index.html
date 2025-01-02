@@ -49,26 +49,6 @@
                 margin-bottom: 20px;
             }
         }
-        .left-sidebar {
-    display: block; /* Tampilkan sidebar di semua ukuran */
-}
-
-@media (max-width: 768px) {
-    .left-sidebar {
-        position: fixed; /* Tetap di atas */
-        width: 100%; /* Lebar penuh */
-        z-index: 1000; /* Pastikan di atas elemen lain */
-    }
-}
-        .left-sidebar {
-    display: none; /* Sembunyikan secara default */
-}
-
-.left-sidebar.active {
-    display: block; /* Tampilkan saat aktif */
-}
-
-
     </style>
 </head>
 
@@ -77,16 +57,16 @@
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
         data-sidebar-position="fixed" data-header-position="fixed">
         <!-- Sidebar Start -->
-       <aside class="left-sidebar">
-    <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="./index.html" class="text-nowrap logo-img">
-                <img src="../src/assets/images/logos/dark-logo.svg" width="180" alt="" />
-            </a>
-            <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-                <i class="ti ti-x fs-8"></i>
-            </div>
-        </div>
+        <aside class="left-sidebar">
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
             <ul id="sidebarnav">
                 <li class="nav-small-cap">
